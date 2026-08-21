@@ -1,0 +1,7 @@
+@model IEnumerable<UnassignedTicketRow>
+@{ ViewData["Title"] = "Unassigned Tickets"; }
+<h1>Unassigned Tickets</h1>
+<table><thead>
+<tr><th>Ticket</th><th>Subject</th><th>Customer</th><th>Priority</th><th>Status</th><th>Created At</th></tr></thead><tbody>
+@foreach (var r in Model) { <tr><td>@r.TicketId</td><td>@r.Subject</td><td>@r.Customer</td><td>@r.Priority</td><td>@r.Status</td><td>@r.CreatedAt</td></tr> }
+</tbody></table>

@@ -1,0 +1,7 @@
+@model IEnumerable<PrimaryAssigneeRow>
+@{ ViewData["Title"] = "Primary Assignee"; }
+<h1>Primary Assignee</h1>
+<table><thead>
+<tr><th>Ticket</th><th>Subject</th><th>Primary Assignee</th></tr></thead><tbody>
+@foreach (var r in Model) { <tr><td>@r.TicketId</td><td>@r.Subject</td><td>@r.PrimaryAssignee</td></tr> }
+</tbody></table>

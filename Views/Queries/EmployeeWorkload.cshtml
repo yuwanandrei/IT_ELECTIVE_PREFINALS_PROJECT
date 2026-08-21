@@ -1,0 +1,7 @@
+@model IEnumerable<EmployeeWorkloadRow>
+@{ ViewData["Title"] = "Employee Workload"; }
+<h1>Employee Workload</h1>
+<table><thead>
+<tr><th>Employee</th><th>Department</th><th>Unresolved Ticket Count</th></tr></thead><tbody>
+@foreach (var r in Model) { <tr><td>@r.Employee</td><td>@r.Department</td><td>@r.UnresolvedTicketCount</td></tr> }
+</tbody></table>
