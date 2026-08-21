@@ -79,15 +79,6 @@ dotnet run
 - Primary assignee
 - Category hierarchy
 
-## GitHub Workflow
-
-`main` is the permanent integration branch. Feature work must not be pushed directly to `main`.
-
-Create a feature branch, commit focused changes, push the branch, open a Pull Request, have another group member review and approve it, and then merge the Pull Request.
-
-The assignment requires at least 10 Pull Requests per member. PRs should be meaningful and should not be bulk or fake activity.
-
-See `BRANCH_PLAN.md` for the branch organization derived from the assignment requirements. The referenced Proposed Branch document was not supplied.
 
 ## Database Investigation
 
