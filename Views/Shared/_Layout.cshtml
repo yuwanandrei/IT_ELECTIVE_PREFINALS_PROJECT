@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Lycevm Help Desk</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+<header>
+<nav class="navbar">
+ <a class="brand" asp-controller="Home" asp-action="Index">Lycevm Help Desk</a>
+ <div class="navlinks">
+  <a asp-controller="Departments" asp-action="Index">Departments</a>
+  <a asp-controller="Employees" asp-action="Index">Employees</a>
+  <a asp-controller="Teams" asp-action="Index">Teams</a>
+  <a asp-controller="Customers" asp-action="Index">Customers</a>
+  <a asp-controller="Tickets" asp-action="Index">Tickets</a>
+  <span class="navgroup">Queries
+   <a asp-controller="Queries" asp-action="EmployeeWorkload">Employee Workload</a>
+   <a asp-controller="Queries" asp-action="DepartmentWorkload">Department Workload</a>
+   <a asp-controller="Queries" asp-action="UnassignedTickets">Unassigned</a>
+   <a asp-controller="Queries" asp-action="MultipleAssigneeTickets">Multiple Assignees</a>
+   <a asp-controller="Queries" asp-action="PrimaryAssignee">Primary Assignee</a>
+   <a asp-controller="Queries" asp-action="CategoryHierarchy">Category Hierarchy</a>
+  </span>
+ </div>
+</nav>
+</header>
+<main class="container">@RenderBody()</main>
+<footer class="footer">EF Core Database-First Help Desk</footer>
+</body>
+</html>
