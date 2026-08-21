@@ -92,9 +92,3 @@ See `BRANCH_PLAN.md` for the branch organization derived from the assignment req
 ## Database Investigation
 
 See `DATABASE.md` for the inspected tables, columns, keys, foreign keys, nullable fields and relationship summary.
-
-## Opening the project with Visual Studio
-
-Open `LycevmHelpDesk.sln` from the project root. The solution contains the `LycevmHelpDesk` ASP.NET Core MVC project.
-
-Use the Visual Studio Run button (or Ctrl+F5) to launch the application. Do not run the generated executable directly from `bin\\Debug\\net8.0`; run the project/solution so the project directory is used as the content root and `wwwroot` and `lycevm.db` are found correctly.
