@@ -1,0 +1,7 @@
+@model IEnumerable<CategoryHierarchyRow>
+@{ ViewData["Title"] = "Category Hierarchy"; }
+<h1>Category Hierarchy</h1>
+<table><thead>
+<tr><th>Category</th><th>Parent Category</th></tr></thead><tbody>
+@foreach (var r in Model) { <tr><td>@r.Category</td><td>@r.ParentCategory</td></tr> }
+</tbody></table>
