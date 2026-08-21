@@ -1,0 +1,16 @@
+@{ ViewData["Title"] = "Dashboard"; }
+<h1>Help Desk Dashboard</h1><p class="muted">Browse the existing SQLite Help Desk database through EF Core.</p>
+<div class="cards">
+ <div class="card">Departments<strong>@ViewBag.Departments</strong></div>
+ <div class="card">Employees<strong>@ViewBag.Employees</strong></div>
+ <div class="card">Customers<strong>@ViewBag.Customers</strong></div>
+ <div class="card">Tickets<strong>@ViewBag.Tickets</strong></div>
+</div>
+<div class="card"><h2>Required Query Pages</h2><ul>
+<li><a asp-controller="Queries" asp-action="EmployeeWorkload">Employee Workload</a></li>
+<li><a asp-controller="Queries" asp-action="DepartmentWorkload">Department Workload</a></li>
+<li><a asp-controller="Queries" asp-action="UnassignedTickets">Unassigned Tickets</a></li>
+<li><a asp-controller="Queries" asp-action="MultipleAssigneeTickets">Multiple-Assignee Tickets</a></li>
+<li><a asp-controller="Queries" asp-action="PrimaryAssignee">Primary Assignee</a></li>
+<li><a asp-controller="Queries" asp-action="CategoryHierarchy">Category Hierarchy</a></li>
+</ul></div>
