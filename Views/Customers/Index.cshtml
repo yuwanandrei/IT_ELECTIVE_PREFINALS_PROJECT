@@ -1,0 +1,5 @@
+@model IEnumerable<Customer>
+@{ ViewData["Title"] = "Customers"; }
+<h1>Customers</h1><table><thead><tr><th>Company</th><th>Contact Name</th><th>Email</th><th>Phone</th><th>Active</th></tr></thead><tbody>
+@foreach (var c in Model) { <tr><td>@c.CompanyName</td><td>@c.ContactName</td><td>@c.Email</td><td>@(c.Phone ?? "—")</td><td><span class="badge @(c.IsActive ? "active" : "inactive")">@(c.IsActive ? "Active" : "Inactive")</span></td></tr> }
+</tbody></table>
